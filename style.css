@@ -42,12 +42,12 @@ body {
   }
   
   .lover-img, .couple-img {
-    width: 390px;
+    width: 520px;
     margin-top: 40px;
-    border-radius: 26px;
+    border-radius: 32px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.3);
     animation: fadeIn 1s ease forwards;
-    max-width: 98vw;
+    max-width: 99vw;
   }
   
   .popup {
@@ -57,13 +57,13 @@ body {
     transform: translate(-50%, -50%);
     background-color: white;
     border-radius: 20px;
-    padding: 48px;
+    padding: 64px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     z-index: 1000;
     text-align: center;
-    width: 660px;
-    max-width: 98vw;
-    font-size: 2.3rem;
+    width: 820px;
+    max-width: 99vw;
+    font-size: 2.8rem;
   }
   
   .popup h2 {
@@ -76,7 +76,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px; /* khoảng cách giữa các nút */
+    gap: 40px;
     flex-wrap: wrap;
     margin-top: 20px;
     position: relative;
@@ -156,11 +156,11 @@ body {
     position: absolute;
     pointer-events: none;
     z-index: 2000;
+    font-size: 3.2rem;
   }
   
   .heart {
     color: red;
-    font-size: 2rem;
     animation: floatHeart 2s ease forwards;
   }
   
@@ -171,7 +171,6 @@ body {
   
   .sparkle {
     color: #ffe066;
-    font-size: 2.2rem;
     animation: sparkleAnim 2s linear forwards;
   }
   
@@ -297,23 +296,23 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 780px;
-    height: 702px;
+    width: 1200px;
+    height: 1100px;
   }
   .heart-outline {
     position: absolute;
     top: 0; left: 0;
-    width: 780px;
-    height: 702px;
+    width: 1200px;
+    height: 1100px;
     z-index: 0;
     filter: drop-shadow(0 0 32px #ff69b4) drop-shadow(0 0 16px #ff1744);
     pointer-events: none;
   }
   .couple-wrapper .couple-img {
-    border-radius: 31px;
+    border-radius: 38px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.18);
-    max-width: 338px;
-    width: 88%;
+    max-width: 450px;
+    width: 98%;
     height: auto;
     position: relative;
     z-index: 1;
@@ -328,7 +327,7 @@ body {
   }
   .heart-path {
     position: absolute;
-    font-size: 2.2rem;
+    font-size: 3.5rem;
     animation: heartOrbit 2.5s linear infinite;
     opacity: 0.85;
   }
@@ -381,9 +380,9 @@ body {
       bottom: -28px;
     }
     .popup {
-      width: 140vw;
-      padding: 28px;
-      font-size: 1.6rem;
+      width: 170vw;
+      padding: 38px;
+      font-size: 1.9rem;
     }
     .popup-buttons button {
       padding: 10px 12px;
@@ -397,29 +396,29 @@ body {
       max-width: 90vw;
     }
     .couple-wrapper {
-      width: 127vw;
-      height: 78vw;
-      min-width: 0;
-      min-height: 0;
-      max-width: 100vw;
-      max-height: 80vw;
+      width: 200vw;
+      height: 160vw;
     }
     .heart-outline {
-      width: 127vw;
-      height: 78vw;
-      min-width: 0;
-      min-height: 0;
-      max-width: 100vw;
-      max-height: 80vw;
+      width: 200vw;
+      height: 160vw;
+    }
+    .lover-img, .couple-img {
+      width: 95vw;
+      max-width: 99vw;
     }
     .couple-wrapper .couple-img {
-      max-width: 78vw;
-      width: 78vw;
-      margin-top: 24px;
-      border-radius: 16px;
+      max-width: 95vw;
+      width: 95vw;
     }
-    #heartEffects .heart-path {
-      font-size: 1.3rem;
+    .heart, .sparkle {
+      font-size: 2.1rem;
+    }
+    .heart-path {
+      font-size: 2.2rem;
+    }
+    .popup-buttons {
+      gap: 18px;
     }
   }
   
