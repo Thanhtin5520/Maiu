@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Tặng Mai Iu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Hộp quà -->
+  <div id="giftBox" class="gift-box">
+    🎁
+  </div>
+
+  <!-- Ảnh người yêu với hiệu ứng bàn tay chỉ vào -->
+  <div id="loverImageWrapper" class="hidden lover-img-wrapper">
+    <span class="hand hand-left">👉</span>
+    <img id="loverImage" src="Mai.jpg" alt="Người yêu" class="lover-img">
+    <span class="hand hand-right">👈</span>
+    <div class="click-here-text">Ngon Đụng DÔ</div>
+  </div>
+
+  <!-- Nền mờ -->
+  <div class="popup-backdrop hidden"></div>
+
+  <!-- Popup câu hỏi -->
+  <div id="questionPopup" class="popup hidden">
+    <h2>Yêu anh không Mai? 🥹</h2>
+    <div class="popup-buttons">
+      <button id="yesBtn">Có</button>
+      <button id="noBtn" class="no-btn">Không</button>
+      <button id="veryYesBtn">Có rất nhiều</button>
+    </div>
+  </div>
+
+  <!-- Dòng chữ tỏ tình -->
+  <div id="loveMessage" class="love-message hidden">Anh cũng yêu em 😘</div>
+
+  <!-- Ảnh 2 đứa -->
+  <div class="couple-wrapper hidden">
+    <svg class="heart-outline" viewBox="0 0 400 360" width="600" height="540">
+      <defs>
+        <linearGradient id="heartStroke" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#ff69b4"/>
+          <stop offset="100%" stop-color="#ff1744"/>
+        </linearGradient>
+      </defs>
+      <path d="M200 320 Q40 200 80 100 Q120 20 200 80 Q280 20 320 100 Q360 200 200 320 Z" fill="none" stroke="url(#heartStroke)" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <img id="coupleImage" src="Iu.jpg" alt="2 đứa mình" class="couple-img">
+    <div id="heartEffects"></div>
+  </div>
+
+  <!-- Container trái tim -->
+  <div id="heartsContainer"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
